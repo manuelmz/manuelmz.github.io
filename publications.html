@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | My Site</title>
+  <link rel="icon" href="https://fav.farm⚡" />
+
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #e0e0e0;
+      /* The specific system font stack used in modern academic sites */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      margin: 0;
+      line-height: 1.5; /* Andrew's site uses a slightly tighter line height for a compact look */
+    }
+    nav {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #333;
+      z-index: 1000;
+      position: sticky;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: #bb86fc;
+      margin: 0 15px;
+      text-decoration: none;
+      /* Making navigation bold and clean */
+      font-weight: 600;
+      font-family: inherit;
+    }
+    nav a:hover { color: #03dac6; }
+
+    /* Optional: Adding a monospace font for specific technical labels or dates */
+    .date-label {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0.5rem;
+    }
+    h1 { color: #e0e0e0; margin-bottom: 2rem; }
+    h2 { color: #bb86fc; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 3rem; }
+
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 2rem; padding-left: 1rem; border-left: 2px solid #333; }
+    li:hover { border-left: 2px solid #03dac6; } /* Subtle highlight on hover */
+
+    .pub-title { font-weight: bold; display: block; color: #fff; font-size: 1.1rem; }
+    .pub-meta { font-size: 0.95rem; color: #aaa; display: block; margin: 0.3rem 0; }
+    .pub-links a {
+      font-size: 0.85rem;
+      color: #03dac6;
+      text-decoration: none;
+      margin-right: 12px;
+      border: 1px solid #03dac6;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .pub-links a:hover { background-color: #03dac6; color: #121212; }
+
+    /* Simple Bulleted Menu */
+    /* 1. Ensure page jumps account for both menus */
+    html {
+          scroll-behavior: smooth;
+          /* Adjust this to: Main Menu Height + Pub Menu Height + extra padding */
+          scroll-padding-top: 140px;
+        }
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <!--<a href="cv.html">CV</a>-->
+  </nav>
+
+  <div class="container">
+    <h1>Publications</h1>
+    <p>Here you will find recent preprints, published jorunal articles, and my doctoral dissertation.</p>
+
+    <nav class="pub-menu">
+      <a href="#preprints">Preprints</a>
+      <a href="#journals">Journal Publications</a>
+      <a href="#dissertation">Dissertation</a>
+    </nav>
+
+
+    <!-- Section 1: Preprints -->
+    <section id="preprints">
+      <h2>Preprints</h2>
+      <ul>
+        <li>
+          <span class="pub-title">Modeling integrated frequency shifters and beam splitters</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Kevin J Randles, Nils T Otterstrom, Paul S Davids, Michael Gehl, Mohan Sarovar. <em>arXiv:2602.06003</em>, 2026.</span>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2602.06003">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Data-driven learning of non-Markovian quantum dynamics</span>
+          <span class="pub-meta"> Samuel Goodwin, Brian K McFarland, <strong>Manuel H Muñoz-Arias</strong>, Edward C Tortorici, Melissa C Revelle, Christopher G Yale, Daniel S Lobser, Susan M Clark, Mohan Sarovar. <em>arXiv:2601.07934</em>, 2026.</span>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2601.07934">[arXiv]</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Published Work -->
+    <section id="journals">
+      <h2>Journal publications</h2>
+      <ul>
+        <li>
+          <span class="pub-title">Detecting genuine multipartite entanglement in multi-qubit devices with restricted measurements</span>
+          <span class="pub-meta">Nicky Kai Hong Li, Xi Dai, <strong>Manuel H Muñoz-Arias</strong>, Kevin Reuer, Marcus Huber, Nicolai Friis. <em>Nature Communications</em>, vol. 17, 1707 (2026).</span>
+          <div class="pub-links">
+            <a href="https://www.nature.com/articles/s41467-026-69320-4">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Quantum ergodicity and scrambling in quantum annealers</span>
+          <span class="pub-meta"><strong>Manuel H Muñoz-Arias</strong>, Pablo Poggi. <em>Quantum Science and Technology</em>, vol. 10, 045027 (2025).</span>
+          <div class="pub-links">
+            <a href="https://iopscience.iop.org/article/10.1088/2058-9565/adfc08/meta">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Robustness of longitudinal transmon readout to ionization</span>
+          <span class="pub-meta">Alex A Chapple, Alexander McDonald, <strong>Manuel H Muñoz-Arias</strong>, Mathieu Lachapelle, Alexandre Blais. <em>Physical Review Applied</em>, vol. 24, 034026 (2025).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prapplied/abstract/10.1103/mp2x-zj3y">[Article]</a> <a href="https://arxiv.org/abs/2412.07734">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Deterministic generation of two-dimensional multi-photon cluster states</span>
+          <span class="pub-meta">James O’Sullivan, Kevin Reuer, Aleksandr Grigorev, Xi Dai, Alonso Hernández-Antón, <strong>Manuel H Muñoz-Arias</strong>, Christoph Hellings, Alexander Flasby, Dante Colao Zanuz, Jean-Claude Besse, Alexandre Blais, Daniel Malz, Christopher Eichler, Andreas Wallraff. <em>Nature Communications</em>, vol. 16, 5505 (2025).</span>
+          <div class="pub-links">
+            <a href="https://www.nature.com/articles/s41467-025-60472-3">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Measurement-induced transmon ionization</span>
+          <span class="pub-meta">Marie Frédérique Dumas, Benjamin Groleau-Paré, Alexander McDonald, <strong>Manuel H Muñoz-Arias</strong>, Cristóbal Lledó, Benjamin D’Anjou, Alexandre Blais. <em>Physical Review X</em>, vol. 14, 041023 (2024).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.041023">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Low-depth Clifford circuits approximately solve MaxCut</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Stefanos Kourtis, Alexandre Blais. <em>Physical Review Research</em>, vol. 6, 023294 (2024).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.023294">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Measurement-induced multipartite-entanglement regimes in collective spin systems</span>
+          <span class="pub-meta"> Pablo M Poggi, <strong>Manuel H Muñoz-Arias</strong>. <em>Quantum</em>, vol. 8, 1229 (2024).</span>
+          <div class="pub-links">
+            <a href="https://quantum-journal.org/papers/q-2024-01-18-1229/">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Qubit readout enabled by qubit cloaking</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Cristóbal Lledó, Alexandre Blais. <em>Physical Review Applied</em>, vol. 20, 054013 (2023).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.054013">[Article]</a> <a href="https://arxiv.org/abs/2305.00895">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Phase-space geometry and optimal state preparation in quantum metrology with collective spins</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Ivan H Deutsch, Pablo M Poggi. <em>PRX Quantum</em>, vol. 4, 020314 (2023).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.4.020314">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Statistical complexity and the road to equilibrium in many-body chaotic quantum systems</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>. <em>Physical Review E</em>, vol. 106, 044103 (2022).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.106.044103">[Article]</a> <a href="https://arxiv.org/abs/2205.11777">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Floquet time crystals in driven spin systems with all-to-all p-body interactions</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Karthik Chinni, Pablo M Poggi. <em>Physical Review Research</em>, vol. 4, 023018 (2022).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023018">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Trotter errors from dynamical structural instabilities of floquet maps in quantum simulation</span>
+          <span class="pub-meta"> Karthik Chinni, <strong>Manuel H Muñoz-Arias</strong>, Ivan H Deutsch, Pablo M Poggi. <em>PRX Quantum</em>, vol. 3, 010351 (2022).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.010351">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Nonlinear dynamics and quantum chaos of a family of kicked p-spin models</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Pablo M Poggi, Ivan H Deutsch. <em>Physical Review E</em>, vol. 5, 052212 (2021).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.052212">[Article]</a> <a href="https://arxiv.org/abs/2103.00748">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Simulation of the complex dynamics of mean-field p-spin models using measurement-based quantum feedback control</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Ivan H Deutsch, Poul S Jessen, Pablo M Poggi. <em>Physical Review A</em>, vol. 102, 022610 (2020).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.022610">[Article]</a> <a href="https://arxiv.org/abs/2004.11412">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Simulating nonlinear dynamics of collective spins via quantum measurement and feedback</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Pablo M Poggi, Poul S Jessen, Ivan H Deutsch. <em>Physical review letters</em>, vol. 124, 110503 (2020).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.110503">[Article]</a> <a href="https://arxiv.org/abs/1907.12606">[arXiv]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Generation of robust entangled states in a non-Hermitian periodically driven two-band Bose-Hubbard system</span>
+          <span class="pub-meta"> Carlos A Parra-Murillo, <strong>Manuel H Muñoz-Arias</strong>, Javier Madroñero, Sandro Wimberge. <em>Physical Review A</em>, vol. 95, 032125 (2017).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.032125">[Article]</a>
+          </div>
+        </li>
+
+        <li>
+          <span class="pub-title">Off-resonant many-body quantum carpets in strongly tilted optical lattices</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>, Javier Madroñero, Carlos A Parra-Murillo. <em>Physical Review A</em>, vol. 93, 043603 (2016).</span>
+          <div class="pub-links">
+            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.043603">[Article]</a>
+          </div>
+        </li>
+
+
+      </ul>
+    </section>
+
+    <!-- Section 1: Preprints -->
+    <section id="dissertation">
+      <h2>Dissertation</h2>
+      <ul>
+        <li>
+          <span class="pub-title">Nonequilibrium and Nonlinear Dynamics in Collective Spin Systems and Implementations Using Quantum Feedback Control</span>
+          <span class="pub-meta"> <strong>Manuel H Muñoz-Arias</strong>. <em>The University of New Mexico</em>, (2022).</span>
+          <div class="pub-links">
+            <a href="https://digitalrepository.unm.edu/phyc_etds/265/">[Dissertation]</a>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- Place footer INSIDE the wrapper -->
+    <footer class="site-footer">
+      <p>
+        &copy; Copyright <span id="year"></span> Manuel H. Muñoz-Arias. &nbsp;•&nbsp;
+        Last updated: <span id="last-updated">...</span>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
