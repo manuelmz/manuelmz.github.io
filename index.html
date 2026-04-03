@@ -152,13 +152,26 @@
       </p>
     </section>
 
-    <!-- Place footer INSIDE the wrapper -->
+    <!-- The Footer structure you provided -->
     <footer class="site-footer">
       <p>
         &copy; Copyright <span id="year"></span> Manuel H. Muñoz-Arias. &nbsp;•&nbsp;
         Last updated: <span id="last-updated">...</span>
       </p>
     </footer>
+
+    <!-- Add this Script just before the closing </body> tag -->
+    <script>
+      // 1. Sets the current year automatically
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // 2. Sets the last modified date
+      // On GitHub Pages, document.lastModified reflects the last deployment/build time
+      const lastMod = new Date(document.lastModified);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+      document.getElementById('last-updated').textContent = lastMod.toLocaleDateString(undefined, options);
+    </script>
 
   </div>
 
